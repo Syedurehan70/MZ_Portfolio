@@ -1,0 +1,87 @@
+@import "_variable.scss";
+
+#about {
+    padding: 3% 4%;
+
+    .container-fluid {
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        font-style: $fontStylenormal;
+        font-weight: bold;
+        font-size: 4rem;
+        padding: 10px 5px;
+        padding-top: 3%;
+        color: #400F0A;
+    }
+
+    p {
+        font-family: $fontMullish;
+        font-style: $fontStylenormal;
+        font-weight: 200;
+        line-height: 25px;
+        font-size: 1.13rem;
+        text-align: justify;
+    }
+
+    .about-pic {
+        display: flex;
+        justify-content: center;
+        padding: 2% 0;
+        padding-top: 60px;
+    }
+
+    .profile-pic {
+        width: 60%;
+        position: relative;
+        border-radius: 30%;
+        margin: auto;
+        border: 5px solid #400F0A;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #about {
+        h1 {
+            font-size: 3.5rem;
+            padding: 10px;
+        }
+
+        p {
+            line-height: 20px;
+            font-size: 1.1rem;
+        }
+
+        .about-pic {
+            padding-top: 10px;
+        }
+
+        .profile-pic {
+            width: 40%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about {
+        h1 {
+            font-size: 3rem;
+            padding: 5px;
+        }
+
+        p {
+            line-height: 20px;
+            font-size: 1rem;
+        }
+
+        .about-pic {
+            padding-top: 10px;
+        }
+
+        .profile-pic {
+            width: 50%;
+        }
+    }
+}

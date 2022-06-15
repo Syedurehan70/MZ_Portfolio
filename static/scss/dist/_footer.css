@@ -1,0 +1,35 @@
+.footer {
+  padding: 2% 4%;
+  border-top-left-radius: 100% 80px;
+  background: #400f0a;
+  background: radial-gradient(circle, #400f0a 0%, #8c3616 90%, #400f0a 100%);
+}
+.footer .container {
+  text-align: center;
+}
+.footer i {
+  font-size: 1.5rem;
+}
+.footer p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 1rem;
+}
+.footer p a {
+  color: rgba(255, 236, 66, 0.719);
+}
+.footer p a:hover, .footer i:hover {
+  color: rgba(56, 124, 145, 0.979);
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    border-top-left-radius: 100% 0px;
+  }
+  .footer p {
+    margin-bottom: 0.5rem;
+  }
+  .footer ul {
+    margin-bottom: 0.5rem;
+  }
+}

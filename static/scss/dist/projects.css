@@ -1,0 +1,78 @@
+#projects {
+  padding: 3% 4%;
+}
+#projects .container-fluid {
+  text-align: center;
+}
+#projects .row::before {
+  background: #a35954;
+  border-radius: 1000px;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+}
+#projects .main-heading {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px 5px;
+  padding-top: 3%;
+  color: #5c2b1a;
+}
+#projects h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  color: #400F0A;
+  padding-bottom: 10px;
+}
+#projects p {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  font-size: 0.938rem;
+  text-align: justify;
+  padding: 10px 20px;
+  color: #555353;
+}
+#projects .project-pic {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+#projects .pro-pic {
+  width: 70%;
+  position: relative;
+  border-radius: 5%;
+  margin: auto;
+  border: 0 solid #400F0A;
+}
+#projects .btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#projects .btn-outline-primary {
+  color: #400F0A;
+  border-color: #400F0A;
+}
+#projects .btn-outline-primary:hover {
+  background-color: #400F0A;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  #projects .main-heading {
+    font-size: 1rem;
+    padding: 10px 5px;
+  }
+}

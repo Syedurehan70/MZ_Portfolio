@@ -1,0 +1,103 @@
+#services {
+  padding: 3% 4%;
+  border-top-left-radius: 100% 80px;
+  border-bottom-right-radius: 100% 80px;
+  background: #400f0a;
+  background: radial-gradient(circle, #400f0a 0%, #8c3616 90%, #400f0a 100%);
+  /* medium and up screens */
+}
+#services .container-fluid {
+  text-align: center;
+}
+#services .row {
+  padding: 55px 0;
+}
+#services h1 {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 10px 5px;
+  padding-top: 3%;
+  color: #fff;
+}
+#services img {
+  padding: 10px 5px;
+}
+#services h2, #services p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.616);
+}
+#services h2 {
+  padding: 10px 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#services p {
+  padding: 0 10px;
+  font-size: 1rem;
+  text-align: justify;
+}
+@media (max-width: 767px) {
+  #services .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #services .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+#services .carousel-inner .carousel-item.active,
+#services .carousel-inner .carousel-item-next,
+#services .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+@media (min-width: 768px) {
+  #services .carousel-inner .carousel-item-end.active,
+#services .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  #services .carousel-inner .carousel-item-start.active,
+#services .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+#services .carousel-inner .carousel-item-end,
+#services .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+@media screen and (max-width: 992px) {
+  #services .row {
+    padding: 20px 0;
+  }
+  #services h1 {
+    font-size: 3.5rem;
+    padding: 0 5px;
+  }
+  #services p {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #services .row {
+    padding: 30px 0;
+  }
+  #services h1 {
+    font-size: 3rem;
+    padding: 0 5px;
+  }
+  #services p {
+    padding: 0 30px;
+  }
+}

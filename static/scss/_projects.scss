@@ -1,0 +1,137 @@
+@import "_variable.scss";
+
+#projects {
+    padding: 3% 4%;
+
+    .container-fluid {
+        text-align: center;
+    }
+
+    .row::before {
+        background: #a35954;
+        border-radius: 1000px;
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+    }
+
+    .main-heading {
+        font-family: 'Rubik', sans-serif;
+        font-style: $fontStylenormal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 10px 5px;
+        padding-top: 3%;
+        color: #5c2b1a;
+    }
+
+    h2 {
+        font-family: $fontFair;
+        font-size: 1.75rem;
+        font-style: $fontStylenormal;
+        font-weight: 900;
+        color: #400F0A;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-family: $fontMullish;
+        font-style: $fontStylenormal;
+        font-weight: 600;
+        line-height: 25px;
+        font-size: 0.938rem;
+        text-align: justify;
+        padding: 10px 20px;
+        color: rgb(85, 83, 83);
+    }
+
+    .project-pic {
+        display: flex;
+        justify-content: center;
+        padding: 2% 0;
+    }
+
+    .pro-pic {
+        width: 70%;
+        position: relative;
+        border-radius: 5%;
+        margin: auto;
+        border: 0 solid #400F0A;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        border-radius: 30px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .btn-outline-primary {
+        color: #400F0A;
+        border-color: #400F0A;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #400F0A;
+        color: #fff;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) {
+      #projects {
+        h2 {
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+
+        .special {
+            padding: 7px 20px;
+            margin-bottom: 0;
+        }
+      }
+  }
+
+@media screen and (max-width: 992px) {
+    #projects {
+        .row {
+            padding: 20px 0;
+        }
+        .main-heading {
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+        h2 {
+            font-size: 1.75rem;
+            padding-bottom: 0px;
+        }
+
+        .pro-pic {
+            width: 60%;
+        }
+
+        .special {
+            padding: 10px 20px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #projects {
+
+        .row {
+            padding: 10px 0;
+        }
+        .main-heading {
+            font-size: 1.3rem;
+            padding: 5px;
+        }
+    }
+}
