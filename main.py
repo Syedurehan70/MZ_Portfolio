@@ -49,5 +49,9 @@ def contact():
     elif request.method == 'GET':
         return render_template("contact.html")
 
+@app.route('/services')
+def services():
+    return render_template('index.html#services')
+
 if __name__ == "__main__":
     app.run(debug=True)
